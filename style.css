@@ -38,7 +38,7 @@ body {
     font-size: 1rem;
     padding: 10em;
   }
-
+  /*footer*/
   footer {
     padding: 30px;
     display: flex;
@@ -66,6 +66,8 @@ section h1{
     fadeIn 1s ease-in-out forwards; 
 
 }
+
+  /*main page content*/
 
 section article {
     align-items: center;
@@ -125,6 +127,8 @@ section article {
     padding: 50px; 
 }
 
+  /*menu image*/
+
 .menu img {
     width: 100%;
     height: auto;
@@ -174,3 +178,37 @@ input[type=text], select, textarea {
     clear: both;
   }
   
+    /*adapting to mobile screensize/tablet*/
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .text, .text2 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .AboutMe, .Project {
+      padding: 40px;
+      flex-direction: column;
+    }
+  
+    .image img, .image2 img, table{
+      max-width: 100%;
+      border-radius: 30px;
+    }
+  
+    table {
+      width: 90%;
+    }
+  
+    table, input[type=submit] .row, .row2, .row3, .row4, th, td{
+      padding: 10px;
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+  }
